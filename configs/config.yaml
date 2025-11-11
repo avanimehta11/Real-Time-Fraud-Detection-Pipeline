@@ -1,0 +1,20 @@
+kafka:
+  bootstrap_servers: "localhost:9092"
+  topic: "creditcard_stream"
+
+storage:
+  mongo:
+    uri: "mongodb://localhost:27017"
+    database: "fraudDB"
+    collection: "transactions"
+
+spark:
+  app_name: "FraudDetectionStream"
+  batch_interval_ms: 2000
+
+model:
+  path: "artifacts/fraud_model.pkl"
+  scaler_path: "artifacts/scaler.pkl"
+  feature_names_path: "artifacts/feature_names.json"
+
+

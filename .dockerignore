@@ -1,0 +1,11 @@
+.venv*
+__pycache__/
+*.pyc
+.git/
+.gitignore
+artifacts/
+data/
+checkpoints/
+*.log
+.DS_Store
+
