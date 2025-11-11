@@ -4,6 +4,11 @@ This project demonstrates a **real-time machine learning pipeline** for detectin
 
 It continuously streams transactions from the **Kaggle Credit Card Fraud dataset**, classifies each record using a trained ML model, stores results in MongoDB, and visualizes live fraud statistics in real time.
 
+<img width="1914" height="943" alt="dashboard" src="https://github.com/user-attachments/assets/4362e4a0-d787-428f-ba18-f565a8d28b5e" />
+
+Dataset link: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
+
+
 ---
 
 ## Overview  
@@ -13,6 +18,8 @@ It continuously streams transactions from the **Kaggle Credit Card Fraud dataset
 - **Processing** → A **Python Kafka Consumer** runs a trained **scikit-learn model** to score transactions
 - **Storage** → Predictions stored in **MongoDB**
 - **Visualization** → A **Streamlit dashboard** connects to MongoDB and displays live metrics
+<img width="2238" height="626" alt="architecture_diagram" src="https://github.com/user-attachments/assets/cc2d29b7-677f-4a11-a1cb-3e68fdd8c1f3" />
+
 
 ---
 
@@ -40,7 +47,7 @@ It continuously streams transactions from the **Kaggle Credit Card Fraud dataset
 
 ---
 
-## ⚙️ Prerequisites
+## ⚙️ Pre-requisites
 - **Python 3.12** on Windows Powershell.
 - **Docker Desktop** (for MongoDB and the consumer container)
 - **Kafka + Zookeeper** (installed locally or launched via Docker Compose)
